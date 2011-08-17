@@ -177,7 +177,7 @@ The first line specifying that it was a general `RuntimeError` exception and the
 
 This is my favorite debugging technique when writing Ruby applications because you don't have to dig through anything -- execution halts right at your message.
 
-# Serious Debuggins
+# Serious Debugging
 
 Most of the time simple output statements using `warn`, `raise`, or a logger will help you find your issue. But sometimes you need the big guns, and that means `ruby-debug`.
 
@@ -199,7 +199,7 @@ If you left off the `19` you would instead get the package for use with 1.8.7 an
 
 ### Booting
 
-When you start a Rails server or console, ou have to explicitly enable the debugger like this:
+When you start a Rails server or console, you have to explicitly enable the debugger like this:
 
 ```bash
 rails server --debug
@@ -326,7 +326,7 @@ PerfTools.rb is a port of Google's Perftools: https://github.com/tmm1/perftools.
 
 * `gem install perftools.rb`
 * Collect data by:
-** Using a block:
+  * Using a block:
 
 ```ruby
 require 'perftools'
@@ -335,7 +335,7 @@ PerfTools::CpuProfiler.start("/tmp/add_numbers_profile") do
 end
 ```
 
-** Using Start/Stop
+  * Using Start/Stop
 
 ```ruby
 require 'perftools'
@@ -344,7 +344,7 @@ PerfTools::CpuProfiler.start("/tmp/add_numbers_profile")
 PerfTools::CpuProfiler.stop
 ```
 
-** Running Externally
+  * Running Externally
 
 ```ruby
 CPUPROFILE=/tmp/my_app_profile RUBYOPT="-r`gem which perftools | tail -1`" ruby my_app.rb
@@ -384,8 +384,6 @@ Where the columns indicate:
 * http://www.igvita.com/2009/06/13/profiling-ruby-with-googles-perftools/
 
 # Ruby Objects
-
-A few notes on writing Ruby objects
 
 ## Methods and Blocks
 
@@ -530,7 +528,7 @@ sample.leet_speak
 
 ### Notes
 
-By using `include`, the methods in the module was added as instance methods. If we used `extend` they would be added as class methods.
+By using `include`, any methods in the module were added as instance methods. If we used `extend` they would be added as class methods.
 
 ### Extension
 
