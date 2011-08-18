@@ -320,6 +320,10 @@ Overall, Resque workers are my preferred approach to break apart functionality o
 * Rails.vim: https://github.com/tpope/vim-rails
 * NerdTree: http://www.vim.org/scripts/script.php?script_id=1658
 
+# General
+
+* People: http://peepcode.com/products/peepopen
+
 # Other Topics
 
 ## Deployment
